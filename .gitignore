@@ -1,1 +1,4 @@
-input-data/raw/*
+*.csv
+venv-mlops/
+input-data/processed/
+__pycache__/
