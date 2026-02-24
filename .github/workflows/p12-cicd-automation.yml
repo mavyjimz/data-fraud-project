@@ -1,4 +1,4 @@
-name: Phase 14: Data Fraud Pipeline CI/CD
+name: "Phase 14: Data Fraud Pipeline CI/CD"
 
 on:
   push:
