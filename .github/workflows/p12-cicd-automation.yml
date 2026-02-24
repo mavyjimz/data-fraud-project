@@ -1,4 +1,4 @@
-# Version 1.10 - Final Permission Alignment
+# Version 1.11 - Classic PAT Implementation
 name: MLOps CI/CD Pipeline
 
 on:
