@@ -1,4 +1,4 @@
-# Version 1.2 - Lowercase fix for GHCR
+# Version 1.3 - Complete Fix: Master branch + Lowercase Tags + Custom File Path
 name: MLOps CI/CD Pipeline
 
 on:
@@ -27,6 +27,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          # Points to your existing folder structure
+          file: ./docker/Dockerfile
           push: true
-          # We use a hardcoded lowercase name to prevent naming errors
+          # Hardcoded lowercase project name to avoid registry naming errors
           tags: ghcr.io/${{ github.repository_owner }}/data-fraud-project:latest
