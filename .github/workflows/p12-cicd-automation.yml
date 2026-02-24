@@ -20,14 +20,13 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
+          username: mavyjimz
           password: ${{ secrets.GH_PAT }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/Dockerfile
+          file: ./Dockerfile
           push: true
-          # Using hardcoded lowercase to prevent naming errors in GHCR
-          tags: ghcr.io/${{ github.repository_owner }}/data-fraud-project:latest
+          tags: ghcr.io/mavyjimz/data-fraud-project:latest
