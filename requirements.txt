@@ -1,0 +1,13 @@
+# Core Data Science
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# MLOps & Tracking
+mlflow
+python-dotenv
+
+# Environment
+python-dateutil
